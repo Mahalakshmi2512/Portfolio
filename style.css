@@ -1,0 +1,509 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: rockwell;
+    background-image: url(./image11.jpg) ;
+    color: rgb(255, 254, 254);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
+
+    
+
+
+
+    /* animation: animatedBg;
+    animation-timing-function: ease;
+    animation-duration: 4S;
+    background-size: 800% 600%;
+    animation-delay: 2S;
+    animation-iteration-count: infinite; */
+
+}
+
+
+@keyframes animatedBg {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+}
+
+
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+    /* box-shadow: rgba(249, 249, 250, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.2) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    width: 100%;
+    background-color: rgba(6, 53, 124, 0.9) 50%, rgb(4, 30, 75) 100%;
+    /* background-color: rgb(70, 145, 231); */
+    background-color: darkblue;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+}
+
+.box {
+
+    flex: 1 0 auto;
+    /* border: 2px solid black; */
+    width: auto;
+    height: 100px;
+    align-content: center;
+
+    justify-content: center;
+
+
+
+
+
+}
+
+.box1 {
+    flex-grow: 4;
+    display: flex;
+
+    align-items: center;
+
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    flex-grow: 1;
+    align-content: center;
+    text-align: center;
+
+}
+
+.box7 {
+    flex-grow: 1;
+    align-content: center;
+    text-align: center;
+}
+
+
+.box a{
+    color: rgb(252, 254, 255);
+    padding: 8px;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(250, 251, 253);
+    border-radius: 10px;
+}
+
+.box a:hover {
+   background-color: white;
+   color: black;
+   padding: 10px 20px 10px 20px;
+}
+
+
+
+
+.container2 {
+
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    min-height: 550px;
+    flex: 1 0 auto;
+    text-align: center;
+    margin: 50px;
+
+    border-radius: 20px;
+    align-content: center;
+    /* box-shadow: rgb(18, 47, 98); */
+    /* background-color:inherit; */
+}
+
+.hero1 {
+    margin-top: 100px;
+    width: 100%;
+
+}
+
+.hero2{
+    padding-top: 100px;
+}
+.hero3{
+    padding-top: 10px;
+}
+
+.hero4{
+    padding-top: 100px;
+}
+
+.logo {
+    justify-content: flex-start;
+
+    margin: 0 10px 0 20px;
+
+
+}
+
+
+.logo img {
+    max-width: 100px;
+    max-height: 80px;
+    border-radius: 50%;
+
+}
+
+.logo2 {
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.hero {
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 20px #888888;
+
+
+}
+
+
+
+.hero1 h1 {
+    color: darkblue;
+
+    font-size: 50px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 150px;
+
+    letter-spacing: 4px;
+    word-spacing: 3px;
+    line-height: 80px;
+    white-space: wrap;
+    /* Prevents text from wrapping */
+
+    /* Keeps text aligned */
+}
+
+/* Animation for each word */
+.hero1 h1 span {
+    opacity: 0;
+    animation: popIn 1s forwards;
+}
+
+/* Pop-in animation for each word */
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Staggered delay for each word */
+.hero1 h1 span:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.hero1 h1 span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.hero1 h1 span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.hero1 h1 span:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.hero1 h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+/* Add more for additional words if needed */
+
+.hero1 p {
+    color: rgb(20, 30, 60);
+    /* Deep Navy */
+
+    text-align: justify;
+    line-height: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    word-spacing: 1px;
+    padding-bottom: 80px;
+}
+
+.projects {
+    display: flex;
+    width: 80%;
+
+    color: rgb(20, 30, 60);
+    /* Deep Navy */
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.project1 {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.hero2 {
+    display: flex;
+    color: black;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    margin-left: 0px;
+    padding-bottom: 80px;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+
+.projects .hero3 h2{
+    margin: 0;
+    padding: 0;
+}
+
+.projects .hero2 h2{
+    margin: 0;
+    padding: 0;
+}
+
+.hero .hero4{
+    padding-bottom: 300px;
+}
+
+
+.hero3  h2{
+    display: flex;
+    color: black;
+    width: 100%;
+    margin-top: 0;
+    box-sizing: border-box;   
+   
+}
+.hero2  h2{
+    display: flex;
+    color: black;
+    width: 100%;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+.hero3 ul{
+   display: flex; 
+   justify-content:space-around;
+   flex-wrap: wrap;
+  
+}
+
+.hero3 ul li{
+
+    display:flex;
+    margin: 20px;
+    flex-direction:row;
+    font-size: 30px;
+    padding: 30px;
+    color: white;
+    border-radius: 20px;
+    background-color:darkblue;
+    list-style-type: none;
+   
+}
+
+.hero3 ul li:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(7, 7, 7);
+    border: 2px black solid;
+}
+
+h2{
+ 
+    font-size: 30px;
+    /* background-color: rgb(225, 134, 14); */
+    width:100%;
+    border-bottom: 2px darkblue solid;
+    padding: 30px;
+    
+
+}
+
+h2:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+ .hero4 h2:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+
+.hero2 img {
+    width: 150px;
+    height: inherit;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+table {
+    margin: 20px;
+}
+
+tr {
+
+    text-align: left;
+    margin: 20px;
+    word-spacing: 2px;
+}
+
+td {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    line-height: 25px;
+    padding: 10px;
+    text-align: justify;
+}
+
+th {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 200px;
+    text-align: right;
+    padding-right: 20px;
+
+}
+
+.hero4  h2{
+    display: flex;
+    color: black;
+    width: 100%;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+.hero .hero4{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding-bottom: 300px;
+    
+}
+
+.hero4 {
+    
+    display: flex;
+    color: black;
+}
+
+.hero4 li {
+    list-style-type: none;
+    display: flex;
+    color: black;
+    outline: none;
+ 
+}
+
+.hero4 ul li label,input{
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 20px;
+    color:black;
+   
+}
+
+.hero4 ul li input{
+    padding: 20px;
+    border: none;
+    border: 2px solid black;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.hero4 ul li:hover{
+    border: none;
+    color: black;
+    outline: none;
+
+}
+
+.hero4 label{
+    list-style-type: none;
+    display: flex;
+    color: black;
+}
+
+.hero4 ul {
+    border: 2px black solid;
+    padding: 70px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    
+}
+
+.hero4 ul li button{
+    padding: 15px 40px 15px 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    border-radius: 10px;
+    font-size: 20px;
+   
+}
+
+ .hero4 button:hover{
+    background-color: black;
+    color:white;
+}
+
+
+
+
+
+
+
